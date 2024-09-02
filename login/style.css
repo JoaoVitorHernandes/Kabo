@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins_medio';
+    src: url('../fonts/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins_semibold';
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins_bold';
+    src: url('../fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* body */
+body {
+    border: 1x solid #f03333;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+/* logo */
+#logo-login {
+    height: 66.45px;
+}
+#logo-login:focus {
+    outline: none;
+}
+
+/* voltar home */
+#voltar-home {
+    text-decoration: none;
+    font-size: 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    margin: 20px 0 10px 0;
+    height: 40px;
+}
+#voltar-home:focus {
+    outline: none;
+}
+
+/* div */
+#div-login {
+    background-color: #1e1e1e;
+    width: 380px;
+    height: 640px;
+    border-radius: 2px;
+    text-align: center;
+    font-family: 'poppins';
+    padding: 0 40px;
+    position: absolute;
+    top: 50%;
+    border: solid 1px #f03333;
+    transform: translate(0, -50%);
+    box-shadow: inset 0 0 20px #663234, 0 0 250px #663234;
+}
+
+#buttons a {
+    text-decoration: none;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#div-login form{
+    width: 100%;
+}
+
+/* inputs */
+.input-login {
+    user-select: none;
+    border-radius: 2px;
+    border: 1px solid #f03333;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    height: 40px;
+    width: 90%;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+    font-family: 'poppins';
+    transition: box-shadow 0.15s, background-color 0.15s;   
+}
+.input-login:hover {
+    user-select: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.input-login:active {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.input-login:focus{
+    outline: none;
+}
+
+
+.login-h3 {
+    font-family: 'poppins_medio';
+    font-size: 18px;
+    color: #ffffff;
+    margin: 25px 0 0 0;
+}
+
+.login-h5 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    font-family: 'poppins';
+    margin: 0 0 40px 0;
+}
+
+#criar-button a {
+    text-decoration: none;
+}
+
+#criar-button{
+    user-select: none;
+    width: 130px;
+    font-family: 'poppins_semibold';
+    background-color: rgba(88, 46, 47, 0.5);
+    border: 1px solid #f03333;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 6px 0;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: box-shadow 0.15s, border-style 0.15s, border-color 0.15s, border-width 0.15s;
+}
+#criar-button:hover {
+    user-select: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#criar-button:active {
+    user-select: none;
+    background-color: rgba(88, 46, 47, 0.2);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+#entrar-button {
+    user-select: none;
+    width: 130px;
+    font-family: 'poppins_semibold';
+    background-color: rgba(167, 52, 55, 0.75);
+    border: 1px solid #f03333;
+    color: white;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+#entrar-button:hover {
+    opacity: 0.9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#entrar-button:active {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
+
+#text123 {
+    font-family: 'poppins_medio';
+    margin-top: 140px;
+}
+#text123 a{
+    text-decoration: none;
+    color: #663234;
+    font-size: 12px;
+}
+
+@media (max-width: 500px) {
+    #div-login{
+        width: 90%;
+        padding: 0px;
+        position: relative;
+        margin: 20px 0;
+        transform: translate(0, 0);
+    }
+    .input-login{
+        margin: 0 20px 20px 20px;
+        width: 80%;
+    }
+    #buttons{
+        width: 90%;
+        margin: 20px auto;
+    }
+    #text123{
+        margin: 140px 0 0 0;
+    }
+    #voltar-home{
+        margin: 15px 20px 15px 0;
+    }
+}
+@media (max-width: 440px) {
+    .input-login{
+        margin: 0 20px 20px 20px;
+        width: 75%;
+    }
+    #buttons{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 390px) {
+    .input-login{
+        margin: 0 20px 20px 20px;
+        width: 70%;
+    }
+    #buttons{
+        width: 85%;
+    }
+    #criar-button{
+        width: 100px;
+        font-size: 15px;
+        margin: 5px;
+    }
+    #entrar-button{
+        margin: 5px;
+        width: 100px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 350px) {
+    .input-login{
+        margin: 0 20px 20px 20px;
+        width: 70%;
+    }
+    #buttons{
+        width: 85%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    #criar-button{
+        width: 100px;
+        font-size: 15px;
+        margin: 5px;
+    }
+    #entrar-button{
+        margin: 5px;
+        width: 100px;
+        font-size: 15px;
+    }
+    #text123{
+        margin: 120px 0 0 0
+    }
+}
+@media (max-height: 650px) {
+    #div-login{
+        position: relative;
+        margin: 20px 0;
+        transform: translate(0, 0);
+    }
+}
