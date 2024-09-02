@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins_medio';
+    src: url('fonts/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins_semibold';
+    src: url('fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins_bold';
+    src: url('fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(30, 30, 30, 1);
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    color: rgba(255, 51, 51, 0.5);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 51, 51, 0.5);
+    border-radius: 2px;
+
+}
+body::-webkit-scrollbar-track {
+    background-color: #582E2F;
+    border: 1px solid #f33333;
+}
+
+.iframefooter {
+    height: 350px;
+    width: 100%;
+    border: none;
+}
+
+.iframefooter::-webkit-scrollbar,
+.iframenav::-webkit-scrollbar {
+    display: none;
+}
+
+.iframenav {
+    height: 125px;
+    width: 100%;
+    border: none;
+}
+
+main{
+    background-color: #F5F5F7;
+    border: 1px solid #F03333;
+    margin: 20px auto;
+    text-decoration: none;
+    padding: 0 20px 20px 20px;
+    max-width: 1480px;
+}
+
+.marca {
+    font-family: 'poppins_bold';
+    font-size: 18px;
+    color: #333333;
+}
+
+.verprodutos {
+    font-family: 'poppins_semibold';
+    font-size: 12px;
+    color: #A73437;
+}
+
+.titulocaixa {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 30px 0 60px;
+}
+
+.titulocaixa p {
+    font-family: 'poppins_bold';
+    font-size: 20px;
+    color: #333333;
+}
+
+.titulocaixa a {
+    font-family: 'poppins_semibold';
+    font-size: 16px;
+    color: #A73437;
+}
+
+.joinboxelements {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.caixas {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 0px;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.bordacaixas {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 0;
+    width: 270px;
+    height: 400px;
+    border-radius: 2px;
+    transition: box-shadow 0.15s, border-style 0.15s, border-color 0.15s, border-width 0.15s;
+}
+
+.bordacaixas:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    user-select: none;
+    box-shadow: 0 4px 10px rgba(240, 51, 51, 0.25);
+
+}
+
+.bordacaixas:active {
+    opacity: 0.8;
+    user-select: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+
+.linha0 {
+    max-width: 1500px;
+    max-height: 100%;
+    flex-direction: column;
+}
+
+
+.linkcaixa {
+    width: 340px;
+    height: 400px;
+    text-decoration: none;
+}
+
+.fotodentro {
+    width: 100%;
+    padding: 20px;
+    height: 270px;
+    border-radius: 9px 9px 0 0;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.8);
+}
+
+.moverdescricaocaixa {
+    display: block;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.escritacaixa {
+    font-size: 16px;
+    font-family: 'poppins_semibold';
+    color: #666666;
+    text-align: left;
+    margin: 0px 10px 0 10px;
+}
+
+.precocaixa {
+    font-size: 20px;
+    font-family: 'poppins_bold';
+    color: rgba(240, 51, 51, 1);
+    margin: 10px 0 0 10px;
+    text-align: left;
+}
+
+.parcelamentopreco {
+    font-family: 'poppins_medio';
+    font-size: 10px;
+    text-align: left;
+    margin: 0px 0 10px 10px;
+    color: #666666;
+}
+@media (max-width:450px) {
+    .caixas {
+        overflow-x: scroll;
+    }
+
+    .linkcaixa {
+        max-height: 300px;
+    }
+
+    .bordacaixas {
+        max-width: 210px;
+        max-height: 340px;
+    }
+
+    .fotodentro {
+        max-height: 210px;
+    }
+
+    .setadireita {
+        display: none;
+    }
+
+    .setaesquerda {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .caixas {
+        margin: auto;
+    }
+
+    .movecaixasrecomendadas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .secondnavbar {
+        display: none;
+    }
+
+    .divbusca {
+        display: none;
+    }
+
+    .carrinho {
+        display: none;
+    }
+
+    .logodentro {
+        display: contents;
+    }
+
+    .spaceperfil {
+        display: contents;
+    }
+
+    .barranav {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    .logodentro .logo {
+        display: contents;
+    }
+
+    .logodentro .menu {
+        display: none;
+    }
+
+    footer {
+        min-height: 100%;
+    }
+
+    #dados_div {
+        min-height: 100vh;
+    }
+
+    nav .divbusca:nth-child(2) {
+        display: inherit;
+        width: 90%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movecaixasrecomendadas {
+        gap: 20px;
+    }
+
+    .bordacaixasrecomendadas {
+        padding: 0;
+        height: 100px;
+        width: 150px;
+    }
+
+    .caixasrecomendadas {
+        max-width: 130px;
+        max-height: 80px;
+    }
+
+    .titulocaixa {
+        margin: 0;
+
+    }
+}
+
+@media (min-width:601px) {
+    .logodentro {
+        display: none;
+    }
+
+    nav .divbusca:nth-child(2) {
+        display: none;
+    }
+
+    #dados_div {
+        bottom: 0;
+        width: 100vw;
+    }
+}
+
+@media (min-width:451px) {
+    .caixas {
+        margin-bottom: 30px;
+    }
+
+    .caixas::-webkit-scrollbar {
+        display: none;
+    }
+
+    .dados_footer {
+        margin: 20px auto 10px auto;
+    }
+}
+#titulo_produto{
+    margin: 20px 20px 10px 20px;
+    font-family: 'poppins_bold';
+    font-size: 20px;
+}
+#descricao_tipo{
+    margin: 20px 20px 20px 20px;
+    font-family: 'poppins_medio';
+    font-size: 13px;
+}
+
+/* busca */
+#busca_por{
+    font-family: 'poppins_medio';
+    font-size: 12px;
+    color: #333333;
+    margin: 20px 20px 0px 20px;
+}
+#palavra_busca{
+    font-family: 'poppins_bold';
+    font-size: 40px;
+    columns: #333333;
+    margin: 0px 20px 20px 20px;
+}
+.pesquisa_vazia{
+    font-family: 'poppins_semibold';
+    font-size: 20px;
+    color: #333333;
+    margin: 20px 20px 0px 20px;
+    text-align: center;
+    width: 100%;
+}
